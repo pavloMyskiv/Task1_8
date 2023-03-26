@@ -1,0 +1,39 @@
+.downloads {
+    width: 100%;
+    background: url('../img/bg1-lines-rotate.svg') no-repeat 0% 110%,
+      url('../img/bg2-lines-rotate.svg') no-repeat 100% 110%;
+    .downloads_content {
+      margin: 0 auto;
+      padding: 120px 0;
+      max-width: $wrap-width;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .downloads_image {
+        margin: 0 35px;
+      }
+      .downloads_text {
+        margin: 0 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $text-color2;
+        h3 {
+          font-weight: 700;
+          font-size: 25px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .buttons {
+          display: flex;
+          a {
+            margin: 60px 15px;
+            @include link;
+          }
+        }
+      }
+    }
+  }

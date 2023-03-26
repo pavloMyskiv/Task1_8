@@ -1,46 +1,25 @@
 /** @format */
-@font-face {
+@e @font-face {
   font-family: "Objective";
-  src: url("../fonts/Objective-Regular.eot");
-  src: url("../fonts/Objective-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Objective-Regular.woff") format("woff"), url("../fonts/Objective-Regular.ttf") format("truetype"), url("../fonts/Objective-Regular.svg#Objective-Regular") format("svg");
+  src: url("../fonts/Objective-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Objective";
-  src: url("../fonts/Objective-Bold.eot");
-  src: url("../fonts/Objective-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Objective-Bold.woff") format("woff"), url("../fonts/Objective-Bold.ttf") format("truetype"), url("../fonts/Objective-Bold.svg#Objective-Bold") format("svg");
+  src: url("../fonts/Objective-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Objective";
-  src: url("../fonts/Objective-Medium.eot");
-  src: url("../fonts/Objective-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Objective-Medium.woff") format("woff"), url("../fonts/Objective-Medium.ttf") format("truetype"), url("../fonts/Objective-Medium.svg#Objective-Medium") format("svg");
+  src: url("../fonts/Objective-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-*,
-*:after,
-*:before {
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Objective";
-  margin: 0;
-  border-color: #fff;
-}
-
-.wrapper {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   width: 100%;
   background: rgb(255, 255, 255);
@@ -138,7 +117,7 @@ body {
 .help {
   width: 100%;
   height: 100%;
-  background: url("/img/bg1-lines.png") no-repeat 100% 0, url("/img/bg2-lines.png") no-repeat 0 100%, url("/img/bg1-dotted.svg") no-repeat 80% 10%, url("/img/bg1-dotted.svg") no-repeat 15% 50%, url("/img/bg1-dotted.svg") no-repeat 80% 90%;
+  background: url("../img/bg1-lines.svg") no-repeat 100% 0, url("../img/bg2-lines.svg") no-repeat 0 100%, url("../img/bg1-dotted.svg") no-repeat 80% 10%, url("../img/bg1-dotted.svg") no-repeat 15% 50%, url("../img/bg1-dotted.svg") no-repeat 80% 90%;
   background-size: unset;
 }
 .help .help_wrapper {
@@ -236,7 +215,51 @@ body {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background: url("/img/arrow-right.svg") no-repeat center/contain;
+  background: url("../img/arrow-right.svg") no-repeat center/contain;
+}
+
+.downloads {
+  width: 100%;
+  background: url("../img/bg1-lines-rotate.svg") no-repeat 0% 110%, url("../img/bg2-lines-rotate.svg") no-repeat 100% 110%;
+}
+.downloads .downloads_content {
+  margin: 0 auto;
+  padding: 120px 0;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.downloads .downloads_content .downloads_image {
+  margin: 0 35px;
+}
+.downloads .downloads_content .downloads_text {
+  margin: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0f001a;
+}
+.downloads .downloads_content .downloads_text h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.downloads .downloads_content .downloads_text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.downloads .downloads_content .downloads_text .buttons {
+  display: flex;
+}
+.downloads .downloads_content .downloads_text .buttons a {
+  margin: 60px 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.downloads .downloads_content .downloads_text .buttons a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .works {
@@ -287,7 +310,7 @@ body {
 
 .reviews {
   margin: 150px 0 0 0;
-  background: url("/img/bg1-dotted.svg") no-repeat 102% 50%;
+  background: url("../img/bg1-dotted.svg") no-repeat 102% 50%;
 }
 .reviews h3 {
   font-weight: 700;
@@ -425,50 +448,6 @@ body {
   display: block;
 }
 
-.downloads {
-  width: 100%;
-  background: url("../img/bg1-lines-rotate.png") no-repeat 0% 110%, url("/img/bg2-lines-rotate.png") no-repeat 100% 110%;
-}
-.downloads .downloads_content {
-  margin: 0 auto;
-  padding: 120px 0;
-  max-width: 1100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.downloads .downloads_content .downloads_image {
-  margin: 0 35px;
-}
-.downloads .downloads_content .downloads_text {
-  margin: 0 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #0f001a;
-}
-.downloads .downloads_content .downloads_text h3 {
-  font-weight: 700;
-  font-size: 25px;
-}
-.downloads .downloads_content .downloads_text p {
-  font-size: 16px;
-  line-height: 24px;
-}
-.downloads .downloads_content .downloads_text .buttons {
-  display: flex;
-}
-.downloads .downloads_content .downloads_text .buttons a {
-  margin: 60px 15px;
-  text-decoration: none;
-  transition: all 0.5s;
-}
-.downloads .downloads_content .downloads_text .buttons a:hover {
-  transform: scale(1.1);
-  text-decoration: underline;
-}
-
 .footer {
   color: #fff;
   width: 100%;
@@ -595,4 +574,22 @@ footer .footer_wrapper a {
 footer .footer_wrapper a:hover {
   transform: scale(1.1);
   text-decoration: underline;
+}
+
+*,
+*:after,
+*:before {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Objective";
+  margin: 0;
+  border-color: #fff;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
