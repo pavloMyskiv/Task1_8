@@ -462,12 +462,12 @@
     width: 80%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .reviews .reviews_content .reviews_content_image img {
     width: 70%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .reviews .reviews_content .reviews_content_image img {
     width: 50%;
   }
@@ -634,12 +634,12 @@
 .downloads .downloads_content .downloads_image img {
   width: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .downloads .downloads_content .downloads_image {
     width: 70%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .downloads .downloads_content .downloads_image {
     width: 50%;
   }

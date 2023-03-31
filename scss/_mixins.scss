@@ -7,10 +7,10 @@
     }
   }
 @mixin responsive-img{
-  @include for-size(phone) {
+  @include for-size(tablet-portrait) {
     width: 70%;
   }
-  @include for-size(tablet-portrait) {
+  @include for-size(phone) {
     width: 50%;
   }
 }
