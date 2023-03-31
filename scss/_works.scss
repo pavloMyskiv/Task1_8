@@ -10,10 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (max-width: 767px) {
+    @include for-size(tablet-portrait) {
       padding: 40px 10px;
     }
-    @media (max-width: 480px) {
+    @include for-size(phone) {
       padding: 20px 10px;
     }
     h3 {
@@ -21,10 +21,10 @@
       font-weight: 700;
       font-size: 26px;
       color: $text-color;
-      @media (max-width: 767px) {
+      @include for-size(tablet-portrait) {
         margin: 0 0 40px 0;
       }
-      @media (max-width: 480px) {
+      @include for-size(phone) {
         margin: 20px 0;
       }
     }
@@ -32,7 +32,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      @media (max-width: 480px) {
+      @include for-size(phone) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -43,7 +43,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media (max-width: 480px) {
+        @include for-size(phone) {
           max-width: 75%;
         }
 

@@ -18,14 +18,14 @@
         font-weight: 700;
         font-size: 40px;
         color: $text-color;
-        @media (max-width: 767px) {
+        @include for-size(tablet-portrait) {
           font-size: 30px;
         }
       }
       .header_links {
         display: flex;
         padding-right: 40px;
-        @media (max-width: 767px) {
+        @include for-size(tablet-portrait) {
           padding: 0;
         }
         a {
@@ -34,7 +34,7 @@
           font-size: 18px;
           color: $text-color2;
           @include link;
-          @media (max-width: 767px) {
+          @include for-size(tablet-portrait) {
             margin: 5px;
             font-size: 16px;
           }
@@ -50,17 +50,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 767px) {
+    @include for-size(tablet-portrait) {
       padding: 35px 10px;
       flex-direction: column-reverse;
       align-items: center;
     }
-    @media (max-width: 480px) {
+    @include for-size(phone) {
       padding: 10px;
     }
     .header_mockup_text {
       max-width: 60%;
-      @media (max-width: 767px) {
+      @include for-size(tablet-portrait) {
         max-width: 100%;
       }
       h1 {
@@ -69,17 +69,17 @@
         line-height: 1.5em;
         padding-right: 40px;
         max-width: 500px;
-        @media (max-width: 991px) {
+        @include for-size(tablet-landscape) {
           font-size: 40px;
         }
-        @media (max-width: 767px) {
+        @include for-size(tablet-portrait) {
           font-size: 30px;
         }
       }
       p {
         font-size: 20px;
         line-height: 1.5em;
-        @media (max-width: 991px) {
+        @include for-size(tablet-landscape) {
           font-size: 16px;
         }
       }

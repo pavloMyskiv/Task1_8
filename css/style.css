@@ -1,5 +1,5 @@
 /** @format */
-@e @font-face {
+@font-face {
   font-family: "Objective";
   src: url("../fonts/Objective-Regular.woff") format("woff");
   font-weight: normal;
@@ -20,7 +20,7 @@
   font-style: normal;
   font-display: swap;
 }
-/** @format */
+/** @format */ /** @format */
 .header {
   width: 100%;
   background: rgb(255, 255, 255);
@@ -462,12 +462,12 @@
     width: 80%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .reviews .reviews_content .reviews_content_image img {
     width: 70%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .reviews .reviews_content .reviews_content_image img {
     width: 50%;
   }
@@ -634,12 +634,12 @@
 .downloads .downloads_content .downloads_image img {
   width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .downloads .downloads_content .downloads_image {
     width: 70%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .downloads .downloads_content .downloads_image {
     width: 50%;
   }
@@ -680,7 +680,7 @@
     margin: 30pz 10px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .downloads .downloads_content .downloads_text .buttons a {
     margin: 10px;
   }
@@ -828,7 +828,7 @@ footer .footer_wrapper .copyright {
 }
 footer .footer_wrapper a {
   display: inline-block;
-  widows: 20px;
+  width: 20px;
   height: 20px;
   margin: 0 10px;
   text-decoration: none;
@@ -837,6 +837,11 @@ footer .footer_wrapper a {
 footer .footer_wrapper a:hover {
   transform: scale(1.1);
   text-decoration: underline;
+}
+@media (max-width: 480px) {
+  footer .footer_wrapper a {
+    margin: 0 5px;
+  }
 }
 
 *,
@@ -855,4 +860,4 @@ body {
 .wrapper {
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=style.css.map */
+}

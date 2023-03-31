@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    @media (max-width: 767px) {
+    @include for-size(tablet-portrait) {
       flex-direction: column;
       justify-content: center;
       align-items: baseline;
@@ -44,7 +44,7 @@
       .footer_links_wrap {
         display: flex;
         flex-direction: column;
-        @media (max-width: 767px) {
+        @include for-size( tablet-portrait) {
           flex-direction: row;
           flex-wrap: wrap;
         }
@@ -117,10 +117,13 @@ footer {
     }
     a {
       display: inline-block;
-      widows: 20px;
+      width: 20px;
       height: 20px;
       margin: 0 10px;
       @include link;
+      @include for-size(phone) {
+        margin: 0 5px;
+      }
     }
   }
 }
