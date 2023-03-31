@@ -1,0 +1,28 @@
+/** @format */
+@import '../scss/_fonts.scss';
+@import '../scss/_variables.scss';
+@import '../scss/_mixins.scss';
+@import '../scss/_header.scss';
+@import '../scss/_help.scss';
+@import '../scss/_works.scss';
+@import '../scss/_reviews.scss';
+@import '../scss/_downloads.scss';
+@import '../scss/_footer.scss';
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Objective';
+  margin: 0;
+  border-color: #fff;
+}
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
