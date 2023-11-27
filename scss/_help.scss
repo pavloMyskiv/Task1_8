@@ -1,0 +1,147 @@
+/** @format */
+
+.help {
+  width: 100%;
+  height: 100%;
+  background: url('../img/bg1-lines.svg') no-repeat 100% 0,
+    url('../img/bg2-lines.svg') no-repeat 0 100%,
+    url('../img/bg1-dotted.svg') no-repeat 80% 10%,
+    url('../img/bg1-dotted.svg') no-repeat 15% 50%,
+    url('../img/bg1-dotted.svg') no-repeat 80% 90%;
+  background-size: unset;
+  .help_wrapper {
+    max-width: $base-width;
+    margin: 0 auto;
+    padding: 150px 10px;
+    position: relative;
+    @include for-size(tablet-portrait) {
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      position: absolute;
+      top: 150px;
+      z-index: -1;
+      max-width: 45%;
+      font-weight: 500;
+      font-size: 36px;
+      color: #260041;
+      @include for-size(tablet-portrait) {
+        max-width: 75%;
+        font-size: 30px;
+        position: unset;
+      }
+    }
+    .help_cards {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(4, auto);
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      & .help__card:nth-child(1) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      & .help__card:nth-child(2) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      & .help__card:nth-child(3) {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      .help__card {
+        margin: 50px;
+        padding: 5px 50px;
+        max-width: 385px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        box-shadow: 5px 20px 50px #4a99d333;
+        border-radius: 10px;
+        background-color: #fff;
+        @include for-size(tablet-landscape) {
+          margin: 30px;
+          padding: 5px 30px;
+        }
+        @include for-size(tablet-portrait) {
+          margin: 5px 0;
+        }
+        @include for-size(phone) {
+          padding: 5px;
+        }
+        img {
+          align-self: center;
+          margin: 50px 0;
+          max-width: 100%;
+          @include for-size(tablet-portrait) {
+            margin: 30px 0;
+            max-width: 75%;
+          }
+          @include for-size(phone) {
+            margin: 5px 0;
+            max-width: 50%;
+          }
+        }
+        h4 {
+          margin: 0;
+          font-size: 20px;
+          font-weight: 500;
+          color: $text-color2;
+        }
+        p {
+          margin: 16px 0;
+          font-size: 16px;
+          display: block;
+          line-height: 1.5em;
+          max-width: 285px;
+          opacity: 0.5;
+          @include for-size(phone) {
+            margin: 5px 0;
+          }
+        }
+        a {
+          display: inline-block;
+          margin: 50px 0;
+          font-size: 14px;
+          color: $text-color;
+          vertical-align: middle;
+          @include link;
+          @include for-size(tablet-portrait) {
+            margin: 30px 0;
+          }
+          @include for-size(phone) {
+            margin: 10px 0;
+          }
+        }
+        & a::after {
+          content: '';
+          display: inline-block;
+          margin-left: 1em;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: url('../img/arrow-right.svg') no-repeat center / contain;
+        }
+      }
+    }
+  }
+}

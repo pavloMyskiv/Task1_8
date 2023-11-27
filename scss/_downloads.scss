@@ -1,0 +1,65 @@
+.downloads {
+    width: 100%;
+    background: url('../img/bg1-lines-rotate.svg') no-repeat 0% 110%,
+      url('../img/bg2-lines-rotate.svg') no-repeat 100% 110%;
+    .downloads_content {
+      margin: 0 auto;
+      padding: 120px 0;
+      max-width: $wrap-width;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include for-size(tablet-portrait) {
+        padding: 70px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .downloads_image {
+        margin: 0 35px;
+        width: 50%;
+        img{
+          width: 100%;
+        }
+        @include responsive-img;
+      }
+      .downloads_text {
+        width: 50%;
+        margin: 0 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $text-color2;
+        @include for-size(tablet-portrait) {
+          width: 90%;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 25px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .buttons {
+          display: flex;
+          a {
+            margin: 60px 15px;
+            max-width: 180px;
+            @include for-size(tablet-portrait) {
+              margin: 30pz 10px;
+            }
+            @include for-size(phone) {
+              margin: 10px;
+            }
+            @include link;
+            img{
+              width: 100%;
+            }
+            
+          }
+        }
+      }
+    }
+  }
